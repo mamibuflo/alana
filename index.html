@@ -4,7 +4,168 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CelebraCampo - Reserva PR</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Resetando margens e paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilos Globais */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Estilização do Cabeçalho */
+    header {
+      background-color: #005f73;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo h1 {
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+
+    header .logo img {
+      width: 50px;
+      height: auto;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    /* Estilização do conteúdo principal */
+    main {
+      padding: 20px;
+    }
+
+    /* Estilização das Seções */
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    .azul {
+      background-color: #0077b6;
+      color: white;
+    }
+
+    .laranja {
+      background-color: #ff7f11;
+      color: white;
+    }
+
+    .verde {
+      background-color: #2d6a4f;
+      color: white;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    /* Estilização do conteúdo dentro das seções */
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .content img {
+      width: 100%;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .content p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    /* Estilização do Rodapé */
+    footer {
+      background-color: #005f73;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer .redes a {
+      margin: 0 10px;
+    }
+
+    footer .redes a img {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+
+      .content {
+        padding: 10px;
+      }
+
+      .content img {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -30,8 +191,7 @@
       <div class="content">
         <img src="img/WhatsApp Image 2025-06-12 at 09.18.26 (1).jpeg" alt="Feira da Lua 1">
         <img src="img/WhatsApp Image 2025-06-12 at 09.18.26 (2).jpeg" alt="Feira da Lua 2">
-        <p>O O "Luau em Reserva", realizado em Reserva, no estado do Paraná, é um evento que tem ganhado popularidade, principalmente por sua proposta de integração entre cultura, natureza e diversão. Não é um evento comum de grandes festas, mas sim algo mais intimista, geralmente realizado em ambientes ao ar livre, com uma conexão direta com o ecossistema local.
-Embora o evento não seja tão amplamente divulgado quanto grandes festivais em capitais, ele atrai muitos visitantes por sua atmosfera relaxante, música ao vivo, danças e, frequentemente, a possibilidade de apreciar uma belíssima paisagem noturna. O luau, como é tradicionalmente entendido, é uma festa ao estilo havaiano, mas em contextos brasileiros, é adaptado às realidades locais.</p>
+        <p>O "Luau em Reserva", realizado em Reserva, no estado do Paraná, é um evento que tem ganhado popularidade, principalmente por sua proposta de integração entre cultura, natureza e diversão...</p>
       </div>
     </section>
 
@@ -40,7 +200,7 @@ Embora o evento não seja tão amplamente divulgado quanto grandes festivais em 
       <h2>Oficinas Mistas</h2>
       <div class="content">
         <img src="img/WhatsApp Image 2025-06-12 at 09.13.36 (1).jpeg" alt="Oficina Cultural">
-        <p>A Em Reserva (PR), a Secretaria de Educação, Cultura, Esporte e Lazer promove diversas oficinas mistas gratuitas — ou seja, abertas a todas as idades e gêneros. Elas envolvem tanto atividades esportivas quanto culturais, acontecendo com inscrição na própria Secretaria.</p>
+        <p>A Em Reserva (PR), a Secretaria de Educação, Cultura, Esporte e Lazer promove diversas oficinas mistas gratuitas...</p>
         <img src="img/WhatsApp Image 2025-06-12 at 09.13.36.jpeg" alt="Costurando Sonhos">
       </div>
     </section>
@@ -49,12 +209,7 @@ Embora o evento não seja tão amplamente divulgado quanto grandes festivais em 
     <section id="culinaria" class="laranja">
       <h2>Culinária Integrativa</h2>
       <div class="content">
-        <p>Sabores paranaenses tradicionais como barreado, pinhão, e chimarrão são a base. A versão integrativa os traz com adaptações modernas:
-Cozimento mais controlado, uso de cortes mais magros ou maior proporção de vegetais.
-Complemento com raízes nativas ou vegetais de baixo índice glicêmico.
-Alimentos locais como aipim, batata-doce, mandioca, verduras da época e frutas da mata ensejam pratos criativos (por exemplo, tortas salgadas com raízes e queijo local, acompanhadas de chás naturais ou infusões de ervas).
-Centros de turismo rural ou ecológico — similares ao que há em Cafeeiras, Morretes ou Guaraqueçaba — incorporam essas práticas em seus menus, muitas vezes em formato de refeições coletivas (“jantar comunitário saudável”) ou oficinas de gastronomia funcional.
-Buffets e cafés em cidades próximas (como Francisco Beltrão ou Foz do Iguaçu) já oferecem “gastronomia funcional / integrativa”, focando em alimentos completos, sazonais e integração com práticas holísticas. </p>
+        <p>Sabores paranaenses tradicionais como barreado, pinhão, e chimarrão são a base. A versão integrativa os traz com adaptações modernas...</p>
         <img src="/img/image.png" alt="Culinária em ação">
       </div>
     </section>
@@ -64,7 +219,7 @@ Buffets e cafés em cidades próximas (como Francisco Beltrão ou Foz do Iguaçu
       <h2>Mostra Cultural</h2>
       <div class="content">
         <img src="img/cultura.png" alt="Mostra Cultural">
-        <p>Espaço dedicado à expressão artística local com apresentações de dança, música, teatro e exposições de artesanato. Incentiva a valorização da identidade cultural de Reserva e o protagonismo de artistas da região.</p>
+        <p>Espaço dedicado à expressão artística local com apresentações de dança, música, teatro e exposições de artesanato...</p>
       </div>
     </section>
 
@@ -72,7 +227,7 @@ Buffets e cafés em cidades próximas (como Francisco Beltrão ou Foz do Iguaçu
     <section id="espaco" class="verde">
       <h2>Espaço Interativo e Educativo</h2>
       <div class="content">
-        <p>Ambiente pensado para promover a educação ambiental, oficinas práticas, rodas de conversa e brincadeiras para crianças. Estimula o aprendizado coletivo e o contato direto com a natureza.</p>
+        <p>Ambiente pensado para promover a educação ambiental, oficinas práticas, rodas de conversa e brincadeiras para crianças...</p>
         <img src="img/sercriança.jpeg" alt="Espaço Educativo">
       </div>
     </section>
